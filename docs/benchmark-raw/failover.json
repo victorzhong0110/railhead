@@ -1,0 +1,36 @@
+{
+  "drift_zero": true,
+  "healthy": {
+    "requests": 20,
+    "successes": 20,
+    "errors": 0,
+    "channels": {
+      "mock-primary": 20
+    },
+    "p50_ms": 3,
+    "p95_ms": 4,
+    "p99_ms": 4
+  },
+  "mode": "failover",
+  "primary_down": {
+    "requests": 40,
+    "successes": 40,
+    "errors": 0,
+    "channels": {
+      "mock-backup": 40
+    },
+    "p50_ms": 3,
+    "p95_ms": 4,
+    "p99_ms": 4
+  },
+  "reconcile": {
+    "quota_balance": 4998800,
+    "quota_granted": 5000000,
+    "settled": 1200,
+    "inflight": 0,
+    "unbilled": 0,
+    "drift": 0,
+    "settled_count": 60,
+    "refunded_count": 0
+  }
+}

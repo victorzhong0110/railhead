@@ -1,0 +1,98 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: /workspace/scripts/k6/completions.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 20 max VUs, 50s max duration (incl. graceful stop):
+              * steady: 20 looping VUs for 20s (gracefulStop: 30s)
+
+
+running (01.0s), 20/20 VUs, 743 complete and 0 interrupted iterations
+steady   [   5% ] 20 VUs  01.0s/20s
+
+running (02.0s), 20/20 VUs, 1523 complete and 0 interrupted iterations
+steady   [  10% ] 20 VUs  02.0s/20s
+
+running (03.0s), 20/20 VUs, 2296 complete and 0 interrupted iterations
+steady   [  15% ] 20 VUs  03.0s/20s
+
+running (04.0s), 20/20 VUs, 3103 complete and 0 interrupted iterations
+steady   [  20% ] 20 VUs  04.0s/20s
+
+running (05.0s), 20/20 VUs, 3926 complete and 0 interrupted iterations
+steady   [  25% ] 20 VUs  05.0s/20s
+
+running (06.0s), 20/20 VUs, 4753 complete and 0 interrupted iterations
+steady   [  30% ] 20 VUs  06.0s/20s
+
+running (07.0s), 20/20 VUs, 5544 complete and 0 interrupted iterations
+steady   [  35% ] 20 VUs  07.0s/20s
+
+running (08.0s), 20/20 VUs, 6342 complete and 0 interrupted iterations
+steady   [  40% ] 20 VUs  08.0s/20s
+
+running (09.0s), 20/20 VUs, 7162 complete and 0 interrupted iterations
+steady   [  45% ] 20 VUs  09.0s/20s
+
+running (10.0s), 20/20 VUs, 7957 complete and 0 interrupted iterations
+steady   [  50% ] 20 VUs  10.0s/20s
+
+running (11.0s), 20/20 VUs, 8771 complete and 0 interrupted iterations
+steady   [  55% ] 20 VUs  11.0s/20s
+
+running (12.0s), 20/20 VUs, 9554 complete and 0 interrupted iterations
+steady   [  60% ] 20 VUs  12.0s/20s
+
+running (13.0s), 20/20 VUs, 10382 complete and 0 interrupted iterations
+steady   [  65% ] 20 VUs  13.0s/20s
+
+running (14.0s), 20/20 VUs, 11185 complete and 0 interrupted iterations
+steady   [  70% ] 20 VUs  14.0s/20s
+
+running (15.0s), 20/20 VUs, 11982 complete and 0 interrupted iterations
+steady   [  75% ] 20 VUs  15.0s/20s
+
+running (16.0s), 20/20 VUs, 12789 complete and 0 interrupted iterations
+steady   [  80% ] 20 VUs  16.0s/20s
+
+running (17.0s), 20/20 VUs, 13578 complete and 0 interrupted iterations
+steady   [  85% ] 20 VUs  17.0s/20s
+
+running (18.0s), 20/20 VUs, 14365 complete and 0 interrupted iterations
+steady   [  90% ] 20 VUs  18.0s/20s
+
+running (19.0s), 20/20 VUs, 15132 complete and 0 interrupted iterations
+steady   [  95% ] 20 VUs  19.0s/20s
+
+running (20.0s), 20/20 VUs, 15950 complete and 0 interrupted iterations
+steady   [ 100% ] 20 VUs  20.0s/20s
+
+     ✓ status is 200
+
+     checks.........................: 100.00% 15998 out of 15998
+     data_received..................: 9.0 MB  447 kB/s
+     data_sent......................: 5.5 MB  275 kB/s
+     http_req_blocked...............: avg=3.36µs  min=542ns    med=2.16µs  max=1.31ms   p(90)=2.79µs  p(95)=3.16µs  p(99)=13.97µs 
+     http_req_connecting............: avg=395ns   min=0s       med=0s      max=656.96µs p(90)=0s      p(95)=0s      p(99)=0s      
+     http_req_duration..............: avg=24.85ms min=474.68µs med=24.68ms max=59.45ms  p(90)=26.79ms p(95)=27.52ms p(99)=30.03ms 
+       { expected_response:true }...: avg=24.85ms min=474.68µs med=24.68ms max=59.45ms  p(90)=26.79ms p(95)=27.52ms p(99)=30.03ms 
+     http_req_failed................: 0.00%   0 out of 16030
+     http_req_receiving.............: avg=39.52µs min=5.46µs   med=33.42µs max=1.75ms   p(90)=55.47µs p(95)=93.8µs  p(99)=235.69µs
+     http_req_sending...............: avg=12.52µs min=2.27µs   med=8.9µs   max=1.28ms   p(90)=13.38µs p(95)=20.15µs p(99)=108.95µs
+     http_req_tls_handshaking.......: avg=0s      min=0s       med=0s      max=0s       p(90)=0s      p(95)=0s      p(99)=0s      
+     http_req_waiting...............: avg=24.8ms  min=454.37µs med=24.62ms max=59.4ms   p(90)=26.73ms p(95)=27.46ms p(99)=29.89ms 
+     http_reqs......................: 16030   799.355118/s
+     iteration_duration.............: avg=25.01ms min=21.64ms  med=24.79ms max=59.54ms  p(90)=26.9ms  p(95)=27.64ms p(99)=30.2ms  
+     iterations.....................: 15998   797.7594/s
+     vus............................: 20      min=20             max=20
+     vus_max........................: 20      min=20             max=20
+
+
+running (20.1s), 00/20 VUs, 15998 complete and 0 interrupted iterations
+steady ✓ [ 100% ] 20 VUs  20s

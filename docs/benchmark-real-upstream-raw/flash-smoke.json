@@ -1,0 +1,50 @@
+[
+  {
+    "req_model": "MiniMax-M3.1-Flash-Preview",
+    "stream": false,
+    "channel": "minimax-m31-flash",
+    "resp_model": "MiniMax-M3.1-Flash-Preview",
+    "has_think": false,
+    "content_len": 0,
+    "reasoning_len": 102,
+    "usage": {
+      "total_tokens": 243,
+      "prompt_tokens": 211,
+      "completion_tokens": 32,
+      "completion_tokens_details": {"reasoning_tokens": 0},
+      "prompt_tokens_details": {"cached_tokens": 128}
+    }
+  },
+  {
+    "req_model": "MiniMax-M3.1-Flash-Preview",
+    "stream": true,
+    "channel": "minimax-m31-flash",
+    "resp_model": "MiniMax-M3.1-Flash-Preview",
+    "has_think": false,
+    "content_len": 16,
+    "reasoning_len": 96,
+    "usage": {
+      "total_tokens": 243,
+      "prompt_tokens": 211,
+      "completion_tokens": 32,
+      "completion_tokens_details": {"reasoning_tokens": 0},
+      "prompt_tokens_details": {"cached_tokens": 128}
+    }
+  },
+  {
+    "req_model": "MiniMax-M3",
+    "stream": false,
+    "channel": "minimax-m3",
+    "resp_model": "MiniMax-M3",
+    "has_think": true,
+    "content_len": 75,
+    "reasoning_len": 0,
+    "usage": {
+      "total_tokens": 215,
+      "prompt_tokens": 183,
+      "completion_tokens": 32,
+      "completion_tokens_details": {"reasoning_tokens": 0},
+      "prompt_tokens_details": {"cached_tokens": 128}
+    }
+  }
+]

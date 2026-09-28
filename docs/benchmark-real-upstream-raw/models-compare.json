@@ -1,0 +1,2169 @@
+{
+  "prompt": "用一句话说明什么是限流。",
+  "temperature": 0,
+  "max_tokens": 128,
+  "reps": 5,
+  "stopped_on_429": false,
+  "summary": {
+    "gateway": {
+      "MiniMax-M3.1-Flash-Preview": {
+        "unary": {
+          "n_ok": 5,
+          "n": 5,
+          "latency_ms": {
+            "n": 5,
+            "avg": 2249.01089540017,
+            "p50": 1938.3026069999687,
+            "p95": 2950.1600089997737,
+            "p99": 2950.1600089997737,
+            "min": 1524.498044000211,
+            "max": 3026.96885900059
+          },
+          "ttft_ms": {
+            "n": 0
+          },
+          "usage_total_tokens": 1354,
+          "has_think": 0,
+          "has_reasoning_content": 5,
+          "reasoning_tokens_min": 0,
+          "reasoning_tokens_max": 0,
+          "channels": [
+            "minimax-m31-flash"
+          ],
+          "resp_models": [
+            "MiniMax-M3.1-Flash-Preview"
+          ]
+        },
+        "stream": {
+          "n_ok": 5,
+          "n": 5,
+          "latency_ms": {
+            "n": 5,
+            "avg": 1802.0459081999434,
+            "p50": 1798.1570319998355,
+            "p95": 1856.984078000096,
+            "p99": 1856.984078000096,
+            "min": 1673.7375129996508,
+            "max": 1941.9030970002495
+          },
+          "ttft_ms": {
+            "n": 5,
+            "avg": 1205.0054892000844,
+            "p50": 1184.8551960001714,
+            "p95": 1301.6386270001021,
+            "p99": 1301.6386270001021,
+            "min": 928.1276120000257,
+            "max": 1510.0441220001812
+          },
+          "usage_total_tokens": 1351,
+          "has_think": 0,
+          "has_reasoning_content": 5,
+          "reasoning_tokens_min": 0,
+          "reasoning_tokens_max": 0,
+          "channels": [
+            "minimax-m31-flash"
+          ],
+          "resp_models": [
+            "MiniMax-M3.1-Flash-Preview"
+          ]
+        }
+      },
+      "MiniMax-M3": {
+        "unary": {
+          "n_ok": 5,
+          "n": 5,
+          "latency_ms": {
+            "n": 5,
+            "avg": 1870.9654480004247,
+            "p50": 2095.045859000493,
+            "p95": 2096.8723220003085,
+            "p99": 2096.8723220003085,
+            "min": 1276.7451680001614,
+            "max": 2152.7595900006418
+          },
+          "ttft_ms": {
+            "n": 0
+          },
+          "usage_total_tokens": 1197,
+          "has_think": 5,
+          "has_reasoning_content": 0,
+          "reasoning_tokens_min": 0,
+          "reasoning_tokens_max": 9,
+          "channels": [
+            "minimax-m3"
+          ],
+          "resp_models": [
+            "MiniMax-M3"
+          ]
+        },
+        "stream": {
+          "n_ok": 5,
+          "n": 5,
+          "latency_ms": {
+            "n": 5,
+            "avg": 3302.7231299996856,
+            "p50": 2897.7449149997483,
+            "p95": 3739.365397000256,
+            "p99": 3739.365397000256,
+            "min": 2648.2990629992855,
+            "max": 4377.507571999558
+          },
+          "ttft_ms": {
+            "n": 5,
+            "avg": 2002.516874199864,
+            "p50": 1656.595706999724,
+            "p95": 2550.7357460001003,
+            "p99": 2550.7357460001003,
+            "min": 1437.2285780000311,
+            "max": 2793.8999319994764
+          },
+          "usage_total_tokens": 1230,
+          "has_think": 5,
+          "has_reasoning_content": 0,
+          "reasoning_tokens_min": 0,
+          "reasoning_tokens_max": 0,
+          "channels": [
+            "minimax-m3"
+          ],
+          "resp_models": [
+            "MiniMax-M3"
+          ]
+        }
+      },
+      "MiniMax-M2.7-highspeed": {
+        "unary": {
+          "n_ok": 5,
+          "n": 5,
+          "latency_ms": {
+            "n": 5,
+            "avg": 3931.07444519992,
+            "p50": 3877.062386999569,
+            "p95": 3987.591447000341,
+            "p99": 3987.591447000341,
+            "min": 3456.5275059994747,
+            "max": 4577.484264000304
+          },
+          "ttft_ms": {
+            "n": 0
+          },
+          "usage_total_tokens": 880,
+          "has_think": 5,
+          "has_reasoning_content": 0,
+          "reasoning_tokens_min": null,
+          "reasoning_tokens_max": null,
+          "channels": [
+            "minimax-m27hs"
+          ],
+          "resp_models": [
+            "MiniMax-M2.7-highspeed"
+          ]
+        },
+        "stream": {
+          "n_ok": 5,
+          "n": 5,
+          "latency_ms": {
+            "n": 5,
+            "avg": 3424.625024600209,
+            "p50": 3308.744109000145,
+            "p95": 3689.3932040002255,
+            "p99": 3689.3932040002255,
+            "min": 3016.1276120006733,
+            "max": 3804.4056940007067
+          },
+          "ttft_ms": {
+            "n": 5,
+            "avg": 1075.904126000023,
+            "p50": 1132.2227679993375,
+            "p95": 1269.5157620000828,
+            "p99": 1269.5157620000828,
+            "min": 759.6659250002631,
+            "max": 1336.652067000614
+          },
+          "usage_total_tokens": 880,
+          "has_think": 5,
+          "has_reasoning_content": 0,
+          "reasoning_tokens_min": 122,
+          "reasoning_tokens_max": 128,
+          "channels": [
+            "minimax-m27hs"
+          ],
+          "resp_models": [
+            "MiniMax-M2.7-highspeed"
+          ]
+        }
+      }
+    },
+    "direct": {
+      "MiniMax-M3.1-Flash-Preview": {
+        "unary": {
+          "n_ok": 5,
+          "n": 5,
+          "latency_ms": {
+            "n": 5,
+            "avg": 2110.6019540002308,
+            "p50": 1555.2077629999985,
+            "p95": 2032.0668530002877,
+            "p99": 2032.0668530002877,
+            "min": 1439.7978250008237,
+            "max": 4028.8668220000545
+          },
+          "ttft_ms": {
+            "n": 0
+          },
+          "usage_total_tokens": 1362,
+          "has_think": 0,
+          "has_reasoning_content": 5,
+          "reasoning_tokens_min": 0,
+          "reasoning_tokens_max": 0,
+          "channels": [],
+          "resp_models": [
+            "MiniMax-M3.1-Flash-Preview"
+          ]
+        },
+        "stream": {
+          "n_ok": 5,
+          "n": 5,
+          "latency_ms": {
+            "n": 5,
+            "avg": 2227.403626999876,
+            "p50": 2144.95252100005,
+            "p95": 2229.614271999708,
+            "p99": 2229.614271999708,
+            "min": 1762.9374709995318,
+            "max": 3140.341135000199
+          },
+          "ttft_ms": {
+            "n": 5,
+            "avg": 1369.4512390000455,
+            "p50": 1279.1462700006377,
+            "p95": 1423.8809920007043,
+            "p99": 1423.8809920007043,
+            "min": 1174.927239999306,
+            "max": 1774.6861069999795
+          },
+          "usage_total_tokens": 0,
+          "has_think": 0,
+          "has_reasoning_content": 3,
+          "reasoning_tokens_min": null,
+          "reasoning_tokens_max": null,
+          "channels": [],
+          "resp_models": [
+            "MiniMax-M3.1-Flash-Preview"
+          ]
+        }
+      },
+      "MiniMax-M3": {
+        "unary": {
+          "n_ok": 5,
+          "n": 5,
+          "latency_ms": {
+            "n": 5,
+            "avg": 2339.8350079998636,
+            "p50": 2213.5751280002296,
+            "p95": 2419.6996489999947,
+            "p99": 2419.6996489999947,
+            "min": 1279.9443630001406,
+            "max": 3600.0313699996696
+          },
+          "ttft_ms": {
+            "n": 0
+          },
+          "usage_total_tokens": 1207,
+          "has_think": 5,
+          "has_reasoning_content": 0,
+          "reasoning_tokens_min": 0,
+          "reasoning_tokens_max": 16,
+          "channels": [],
+          "resp_models": [
+            "MiniMax-M3"
+          ]
+        },
+        "stream": {
+          "n_ok": 5,
+          "n": 5,
+          "latency_ms": {
+            "n": 5,
+            "avg": 2495.339065200278,
+            "p50": 2439.6490030003406,
+            "p95": 3055.7230189997426,
+            "p99": 3055.7230189997426,
+            "min": 1782.1265720003794,
+            "max": 3268.4975440006383
+          },
+          "ttft_ms": {
+            "n": 5,
+            "avg": 1121.3672416002737,
+            "p50": 868.2127320007567,
+            "p95": 958.320449999519,
+            "p99": 958.320449999519,
+            "min": 704.2847030006669,
+            "max": 2295.429002000674
+          },
+          "usage_total_tokens": 0,
+          "has_think": 5,
+          "has_reasoning_content": 0,
+          "reasoning_tokens_min": null,
+          "reasoning_tokens_max": null,
+          "channels": [],
+          "resp_models": [
+            "MiniMax-M3"
+          ]
+        }
+      },
+      "MiniMax-M2.7-highspeed": {
+        "unary": {
+          "n_ok": 5,
+          "n": 5,
+          "latency_ms": {
+            "n": 5,
+            "avg": 3593.3343537997644,
+            "p50": 3609.6722689999297,
+            "p95": 3714.935417999186,
+            "p99": 3714.935417999186,
+            "min": 2945.6971949994113,
+            "max": 4390.440547000253
+          },
+          "ttft_ms": {
+            "n": 0
+          },
+          "usage_total_tokens": 880,
+          "has_think": 5,
+          "has_reasoning_content": 0,
+          "reasoning_tokens_min": null,
+          "reasoning_tokens_max": null,
+          "channels": [],
+          "resp_models": [
+            "MiniMax-M2.7-highspeed"
+          ]
+        },
+        "stream": {
+          "n_ok": 5,
+          "n": 5,
+          "latency_ms": {
+            "n": 5,
+            "avg": 3453.832383200279,
+            "p50": 3668.7207909999415,
+            "p95": 3870.0944720003463,
+            "p99": 3870.0944720003463,
+            "min": 2893.4145250004804,
+            "max": 3927.2941680001168
+          },
+          "ttft_ms": {
+            "n": 5,
+            "avg": 962.7937012000984,
+            "p50": 930.3468880007131,
+            "p95": 961.8744399995194,
+            "p99": 961.8744399995194,
+            "min": 778.6925489999703,
+            "max": 1317.3896119997153
+          },
+          "usage_total_tokens": 0,
+          "has_think": 5,
+          "has_reasoning_content": 0,
+          "reasoning_tokens_min": null,
+          "reasoning_tokens_max": null,
+          "channels": [],
+          "resp_models": [
+            "MiniMax-M2.7-highspeed"
+          ]
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": false,
+      "warmup": true,
+      "status": 200,
+      "latency_ms": 1232.7958719997696,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m31-flash",
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 256,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 45,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 38,
+      "reasoning_len": 97,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": false,
+      "warmup": true,
+      "status": 200,
+      "latency_ms": 2340.8440069997596,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m3",
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 311,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 120
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 120,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 249,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": false,
+      "warmup": true,
+      "status": 200,
+      "latency_ms": 4925.70648399942,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m27hs",
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128
+      },
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 467,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": false,
+      "warmup": true,
+      "status": 200,
+      "latency_ms": 3270.853979000094,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 272,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 61,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 37,
+      "reasoning_len": 124,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": false,
+      "warmup": true,
+      "status": 200,
+      "latency_ms": 2309.11822500002,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 259,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 76,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 163,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": false,
+      "warmup": true,
+      "status": 200,
+      "latency_ms": 3233.677985000213,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128
+      },
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 530,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3026.96885900059,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m31-flash",
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 272,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 61,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 40,
+      "reasoning_len": 119,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2032.0668530002877,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 275,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 64,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 36,
+      "reasoning_len": 171,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2095.045859000493,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m3",
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 225,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 42,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 82,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3600.0313699996696,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 250,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 67,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 215,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3877.062386999569,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m27hs",
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128
+      },
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 448,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3609.6722689999297,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128
+      },
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 479,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1524.498044000211,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m31-flash",
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 259,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 48,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 39,
+      "reasoning_len": 96,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1439.7978250008237,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 278,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 67,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 38,
+      "reasoning_len": 236,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1276.7451680001614,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m3",
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 224,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 41,
+        "completion_tokens_details": {
+          "reasoning_tokens": 9
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 9,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 82,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2419.6996489999947,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 240,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 57,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 116,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3756.7066219999106,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m27hs",
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128
+      },
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 396,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3305.926340000042,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128
+      },
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 494,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2950.1600089997737,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m31-flash",
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 278,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 67,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 42,
+      "reasoning_len": 131,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 4028.8668220000545,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 277,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 66,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 39,
+      "reasoning_len": 134,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1733.404301000519,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m3",
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 234,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 51,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 148,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1279.9443630001406,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 232,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 49,
+        "completion_tokens_details": {
+          "reasoning_tokens": 16
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 16,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 102,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3987.591447000341,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m27hs",
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128
+      },
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 532,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3714.935417999186,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128
+      },
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 519,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1805.124958000306,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m31-flash",
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 270,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 59,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 39,
+      "reasoning_len": 183,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1497.0705069999894,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 256,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 45,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 38,
+      "reasoning_len": 96,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2096.8723220003085,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m3",
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 266,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 83,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 267,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2185.9245299992835,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 244,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 61,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 170,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 4577.484264000304,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m27hs",
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128
+      },
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 571,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 4390.440547000253,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128
+      },
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 418,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1938.3026069999687,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m31-flash",
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 275,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 64,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 38,
+      "reasoning_len": 129,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1555.2077629999985,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 276,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 65,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 39,
+      "reasoning_len": 129,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2152.7595900006418,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m3",
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 248,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 65,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 211,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2213.5751280002296,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 241,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 58,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 119,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3456.5275059994747,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": "minimax-m27hs",
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128
+      },
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 479,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": false,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2945.6971949994113,
+      "ttft_ms": null,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128
+      },
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 484,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1941.9030970002495,
+      "ttft_ms": 1301.6386270001021,
+      "attempts": 1,
+      "channel": "minimax-m31-flash",
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 257,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 46,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 38,
+      "reasoning_len": 98,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1859.1727359998913,
+      "ttft_ms": 1194.6155859995997,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": null,
+      "reasoning_tokens": null,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 40,
+      "reasoning_len": 128,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2897.7449149997483,
+      "ttft_ms": 1574.1244079999888,
+      "attempts": 1,
+      "channel": "minimax-m3",
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 236,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 53,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 114,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3055.7230189997426,
+      "ttft_ms": 958.320449999519,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3",
+      "usage": null,
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 206,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3804.4056940007067,
+      "ttft_ms": 1336.652067000614,
+      "attempts": 1,
+      "channel": "minimax-m27hs",
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 128
+        }
+      },
+      "reasoning_tokens": 128,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 474,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3668.7207909999415,
+      "ttft_ms": 930.3468880007131,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": null,
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 478,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1856.984078000096,
+      "ttft_ms": 928.1276120000257,
+      "attempts": 1,
+      "channel": "minimax-m31-flash",
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 267,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 56,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 33,
+      "reasoning_len": 115,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2144.95252100005,
+      "ttft_ms": 1279.1462700006377,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": null,
+      "reasoning_tokens": null,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": false,
+      "content_len": 43,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 4377.507571999558,
+      "ttft_ms": 2550.7357460001003,
+      "attempts": 1,
+      "channel": "minimax-m3",
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 287,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 104,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 221,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1782.1265720003794,
+      "ttft_ms": 704.2847030006669,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3",
+      "usage": null,
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 164,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3304.4545039992954,
+      "ttft_ms": 1132.2227679993375,
+      "attempts": 1,
+      "channel": "minimax-m27hs",
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 128
+        }
+      },
+      "reasoning_tokens": 128,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 500,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2909.6379600005093,
+      "ttft_ms": 778.6925489999703,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": null,
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 455,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1739.4478209998852,
+      "ttft_ms": 1510.0441220001812,
+      "attempts": 1,
+      "channel": "minimax-m31-flash",
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 274,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 63,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 39,
+      "reasoning_len": 128,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2229.614271999708,
+      "ttft_ms": 1774.6861069999795,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": null,
+      "reasoning_tokens": null,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 40,
+      "reasoning_len": 128,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2648.2990629992855,
+      "ttft_ms": 1437.2285780000311,
+      "attempts": 1,
+      "channel": "minimax-m3",
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 236,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 53,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 105,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1930.6991880002897,
+      "ttft_ms": 780.5893209997521,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3",
+      "usage": null,
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 151,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3308.744109000145,
+      "ttft_ms": 881.4641079998182,
+      "attempts": 1,
+      "channel": "minimax-m27hs",
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 128
+        }
+      },
+      "reasoning_tokens": 128,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 504,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3927.2941680001168,
+      "ttft_ms": 961.8744399995194,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": null,
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 482,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1798.1570319998355,
+      "ttft_ms": 1184.8551960001714,
+      "attempts": 1,
+      "channel": "minimax-m31-flash",
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 278,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 67,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 43,
+      "reasoning_len": 131,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1762.9374709995318,
+      "ttft_ms": 1174.927239999306,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": null,
+      "reasoning_tokens": null,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 39,
+      "reasoning_len": 129,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2850.69870299958,
+      "ttft_ms": 1656.595706999724,
+      "attempts": 1,
+      "channel": "minimax-m3",
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 239,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 56,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 160,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2439.6490030003406,
+      "ttft_ms": 868.2127320007567,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3",
+      "usage": null,
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 108,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3016.1276120006733,
+      "ttft_ms": 759.6659250002631,
+      "attempts": 1,
+      "channel": "minimax-m27hs",
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 122
+        }
+      },
+      "reasoning_tokens": 122,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 477,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3870.0944720003463,
+      "ttft_ms": 1317.3896119997153,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": null,
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 488,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 1673.7375129996508,
+      "ttft_ms": 1100.3618889999416,
+      "attempts": 1,
+      "channel": "minimax-m31-flash",
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": {
+        "total_tokens": 275,
+        "total_characters": 0,
+        "prompt_tokens": 211,
+        "completion_tokens": 64,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": true,
+      "content_len": 40,
+      "reasoning_len": 129,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3.1-Flash-Preview",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3140.341135000199,
+      "ttft_ms": 1423.8809920007043,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3.1-Flash-Preview",
+      "usage": null,
+      "reasoning_tokens": null,
+      "has_think": false,
+      "has_think_close": false,
+      "has_reasoning_content": false,
+      "content_len": 32,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3739.365397000256,
+      "ttft_ms": 2793.8999319994764,
+      "attempts": 1,
+      "channel": "minimax-m3",
+      "resp_model": "MiniMax-M3",
+      "usage": {
+        "total_tokens": 232,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 49,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "reasoning_tokens": 0,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 102,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M3",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3268.4975440006383,
+      "ttft_ms": 2295.429002000674,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M3",
+      "usage": null,
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 102,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 3689.3932040002255,
+      "ttft_ms": 1269.5157620000828,
+      "attempts": 1,
+      "channel": "minimax-m27hs",
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": {
+        "total_tokens": 176,
+        "total_characters": 0,
+        "prompt_tokens": 48,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 128
+        }
+      },
+      "reasoning_tokens": 128,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 501,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "gateway"
+    },
+    {
+      "model": "MiniMax-M2.7-highspeed",
+      "stream": true,
+      "warmup": false,
+      "status": 200,
+      "latency_ms": 2893.4145250004804,
+      "ttft_ms": 825.6650170005742,
+      "attempts": 1,
+      "channel": null,
+      "resp_model": "MiniMax-M2.7-highspeed",
+      "usage": null,
+      "reasoning_tokens": null,
+      "has_think": true,
+      "has_think_close": true,
+      "has_reasoning_content": false,
+      "content_len": 445,
+      "reasoning_len": 0,
+      "error": null,
+      "path": "direct"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "status": 200,
+    "latency_ms": 2182.545226000002,
+    "channel": "minimax-alias-backup",
+    "model": "MiniMax-M2.7-highspeed",
+    "usage": {
+      "total_tokens": 77,
+      "total_characters": 0,
+      "prompt_tokens": 45,
+      "completion_tokens": 32
+    },
+    "has_think": true
+  },
+  {
+    "status": 200,
+    "latency_ms": 1482.4720090000483,
+    "channel": "minimax-alias-backup",
+    "model": "MiniMax-M2.7-highspeed",
+    "usage": {
+      "total_tokens": 77,
+      "total_characters": 0,
+      "prompt_tokens": 45,
+      "completion_tokens": 32
+    },
+    "has_think": true
+  },
+  {
+    "status": 200,
+    "latency_ms": 2750.9464529994148,
+    "channel": "minimax-alias-backup",
+    "model": "MiniMax-M2.7-highspeed",
+    "usage": {
+      "total_tokens": 77,
+      "total_characters": 0,
+      "prompt_tokens": 45,
+      "completion_tokens": 32
+    },
+    "has_think": true
+  }
+]

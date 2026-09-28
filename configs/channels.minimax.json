@@ -1,0 +1,68 @@
+[
+  {
+    "name": "minimax-m31-flash",
+    "kind": "openai",
+    "base_url": "https://api.minimaxi.com/v1",
+    "api_key": "${MINIMAX_API_KEY}",
+    "models": ["MiniMax-M3.1-Flash-Preview"],
+    "upstream_model": "MiniMax-M3.1-Flash-Preview",
+    "priority": 100,
+    "weight": 1,
+    "timeout_ms": 120000
+  },
+  {
+    "name": "minimax-m3",
+    "kind": "openai",
+    "base_url": "https://api.minimaxi.com/v1",
+    "api_key": "${MINIMAX_API_KEY}",
+    "models": ["MiniMax-M3"],
+    "upstream_model": "MiniMax-M3",
+    "priority": 80,
+    "weight": 1,
+    "timeout_ms": 120000
+  },
+  {
+    "name": "minimax-m27hs",
+    "kind": "openai",
+    "base_url": "https://api.minimaxi.com/v1",
+    "api_key": "${MINIMAX_API_KEY}",
+    "models": ["MiniMax-M2.7-highspeed"],
+    "upstream_model": "MiniMax-M2.7-highspeed",
+    "priority": 50,
+    "weight": 1,
+    "timeout_ms": 120000
+  },
+  {
+    "name": "minimax-alias-primary",
+    "kind": "openai",
+    "base_url": "https://api.minimaxi.com/v1",
+    "api_key": "${MINIMAX_API_KEY}",
+    "models": ["minimax"],
+    "upstream_model": "MiniMax-M3.1-Flash-Preview",
+    "priority": 100,
+    "weight": 1,
+    "timeout_ms": 120000
+  },
+  {
+    "name": "minimax-alias-failover",
+    "kind": "openai",
+    "base_url": "https://api.minimaxi.com/v1",
+    "api_key": "${MINIMAX_API_KEY}",
+    "models": ["minimax"],
+    "upstream_model": "MiniMax-M3",
+    "priority": 50,
+    "weight": 1,
+    "timeout_ms": 120000
+  },
+  {
+    "name": "minimax-alias-m27",
+    "kind": "openai",
+    "base_url": "https://api.minimaxi.com/v1",
+    "api_key": "${MINIMAX_API_KEY}",
+    "models": ["minimax"],
+    "upstream_model": "MiniMax-M2.7-highspeed",
+    "priority": 10,
+    "weight": 1,
+    "timeout_ms": 120000
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "status": 200,
+    "latency_ms": 2683.9568649993453,
+    "channel": "minimax-alias-backup",
+    "model": "MiniMax-M2.5",
+    "usage": {
+      "total_tokens": 109,
+      "total_characters": 0,
+      "prompt_tokens": 45,
+      "completion_tokens": 64
+    },
+    "has_think": true
+  },
+  {
+    "status": 200,
+    "latency_ms": 1781.5353269998013,
+    "channel": "minimax-alias-backup",
+    "model": "MiniMax-M2.5",
+    "usage": {
+      "total_tokens": 109,
+      "total_characters": 0,
+      "prompt_tokens": 45,
+      "completion_tokens": 64
+    },
+    "has_think": true
+  },
+  {
+    "status": 200,
+    "latency_ms": 1348.2353430008516,
+    "channel": "minimax-alias-backup",
+    "model": "MiniMax-M2.5",
+    "usage": {
+      "total_tokens": 108,
+      "total_characters": 0,
+      "prompt_tokens": 45,
+      "completion_tokens": 63
+    },
+    "has_think": true
+  }
+]

@@ -1,0 +1,43 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: railhead
+          POSTGRES_PASSWORD: railhead
+          POSTGRES_DB: railhead
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U railhead -d railhead"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+          cache: true
+      - name: Test
+        env:
+          DATABASE_URL: postgres://railhead:railhead@127.0.0.1:5432/railhead?sslmode=disable
+          REDIS_URL: redis://127.0.0.1:6379/0
+        run: go test -count=1 -race ./...

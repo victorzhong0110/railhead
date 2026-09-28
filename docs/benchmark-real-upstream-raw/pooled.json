@@ -1,0 +1,165 @@
+{
+  "method": "persistent connections both sides, interleaved direct then gateway, warmup excluded, concurrency 1, max_tokens 128",
+  "unary_direct_ms": {
+    "n": 6,
+    "p50": 2087.027978000151,
+    "p95": 2216.70489600001,
+    "min": 1850.8941039999627,
+    "max": 2382.078948000526,
+    "avg": 2090.348004999972
+  },
+  "unary_gateway_ms": {
+    "n": 6,
+    "p50": 1687.886079999771,
+    "p95": 1979.8294769998392,
+    "min": 1640.4641689996424,
+    "max": 9130.168783000045,
+    "avg": 2969.2179139998793
+  },
+  "unary_paired_delta_ms": {
+    "n": 6,
+    "p50": -467.312791999575,
+    "p95": 101.83682600018074,
+    "min": -741.6147790008836,
+    "max": 7279.274679000082,
+    "avg": 878.8699089999076
+  },
+  "stream_direct_ttft_ms": {
+    "n": 6,
+    "p50": 910.3433629998108,
+    "p95": 1337.8565699995306,
+    "min": 676.5103440002349,
+    "max": 2287.1250620000865,
+    "avg": 1170.5049558331666
+  },
+  "stream_gateway_ttft_ms": {
+    "n": 6,
+    "p50": 906.2456249994284,
+    "p95": 2281.5874580001037,
+    "min": 761.0833960006858,
+    "max": 2883.5050580000825,
+    "avg": 1579.832034833392
+  },
+  "stream_ttft_paired_delta_ms": {
+    "n": 6,
+    "p50": 205.00698299929354,
+    "p95": 943.730888000573,
+    "min": -348.87235799851624,
+    "max": 956.2581430000137,
+    "avg": 409.3270790002255
+  },
+  "stream_total_paired_delta_ms": {
+    "n": 6,
+    "p50": 330.2362049998919,
+    "p95": 842.279827999846,
+    "min": -295.17403899899364,
+    "max": 1958.7620080001216,
+    "avg": 582.5611155002358
+  },
+  "think_gateway": true,
+  "reasoning_field_gateway": true,
+  "channels": [
+    "minimax-m3"
+  ],
+  "pairs_unary": [
+    {
+      "direct_ms": 2216.70489600001,
+      "gateway_ms": 1687.886079999771,
+      "delta_ms": -528.8188160002392,
+      "direct_tokens": 260,
+      "gateway_tokens": 229
+    },
+    {
+      "direct_ms": 1877.9926509996585,
+      "gateway_ms": 1979.8294769998392,
+      "delta_ms": 101.83682600018074,
+      "direct_tokens": 244,
+      "gateway_tokens": 261
+    },
+    {
+      "direct_ms": 2087.027978000151,
+      "gateway_ms": 1716.8823140000313,
+      "delta_ms": -370.1456640001197,
+      "direct_tokens": 238,
+      "gateway_tokens": 241
+    },
+    {
+      "direct_ms": 1850.8941039999627,
+      "gateway_ms": 9130.168783000045,
+      "delta_ms": 7279.274679000082,
+      "direct_tokens": 243,
+      "gateway_tokens": 311
+    },
+    {
+      "direct_ms": 2382.078948000526,
+      "gateway_ms": 1640.4641689996424,
+      "delta_ms": -741.6147790008836,
+      "direct_tokens": 241,
+      "gateway_tokens": 233
+    },
+    {
+      "direct_ms": 2127.389452999523,
+      "gateway_ms": 1660.0766609999482,
+      "delta_ms": -467.312791999575,
+      "direct_tokens": 253,
+      "gateway_tokens": 240
+    }
+  ],
+  "pairs_stream": [
+    {
+      "direct_ttft_ms": 701.2386420001349,
+      "gateway_ttft_ms": 906.2456249994284,
+      "ttft_delta_ms": 205.00698299929354,
+      "direct_total_ms": 1684.989688999849,
+      "gateway_total_ms": 1824.8297589998401,
+      "direct_tokens": 232,
+      "gateway_tokens": 259
+    },
+    {
+      "direct_ttft_ms": 676.5103440002349,
+      "gateway_ttft_ms": 779.9691660002281,
+      "ttft_delta_ms": 103.45882199999323,
+      "direct_total_ms": 1695.4850140000417,
+      "gateway_total_ms": 2025.7212189999336,
+      "direct_tokens": 230,
+      "gateway_tokens": 254
+    },
+    {
+      "direct_ttft_ms": 1109.955753999202,
+      "gateway_ttft_ms": 761.0833960006858,
+      "ttft_delta_ms": -348.87235799851624,
+      "direct_total_ms": 2080.393503999403,
+      "gateway_total_ms": 1785.2194650004094,
+      "direct_tokens": 264,
+      "gateway_tokens": 244
+    },
+    {
+      "direct_ttft_ms": 1337.8565699995306,
+      "gateway_ttft_ms": 2281.5874580001037,
+      "ttft_delta_ms": 943.730888000573,
+      "direct_total_ms": 2127.49083899962,
+      "gateway_total_ms": 4086.2528469997415,
+      "direct_tokens": 250,
+      "gateway_tokens": 272
+    },
+    {
+      "direct_ttft_ms": 910.3433629998108,
+      "gateway_ttft_ms": 1866.6015059998244,
+      "ttft_delta_ms": 956.2581430000137,
+      "direct_total_ms": 2111.4705950003554,
+      "gateway_total_ms": 2953.7504230002014,
+      "direct_tokens": 234,
+      "gateway_tokens": 232
+    },
+    {
+      "direct_ttft_ms": 2287.1250620000865,
+      "gateway_ttft_ms": 2883.5050580000825,
+      "ttft_delta_ms": 596.379995999996,
+      "direct_total_ms": 4410.74910899988,
+      "gateway_total_ms": 4930.171730000438,
+      "direct_tokens": 274,
+      "gateway_tokens": 282
+    }
+  ],
+  "paired_tokens": 6021
+}

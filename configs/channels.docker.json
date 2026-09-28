@@ -1,0 +1,22 @@
+[
+  {
+    "name": "mock-primary",
+    "kind": "openai",
+    "base_url": "http://mock-a:8090/v1",
+    "api_key": "mock",
+    "models": ["railhead-mock"],
+    "priority": 100,
+    "weight": 1,
+    "timeout_ms": 5000
+  },
+  {
+    "name": "mock-backup",
+    "kind": "openai",
+    "base_url": "http://mock-b:8090/v1",
+    "api_key": "mock",
+    "models": ["railhead-mock"],
+    "priority": 10,
+    "weight": 1,
+    "timeout_ms": 5000
+  }
+]

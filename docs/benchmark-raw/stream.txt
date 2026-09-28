@@ -1,0 +1,84 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: /workspace/scripts/k6/stream.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 10 max VUs, 45s max duration (incl. graceful stop):
+              * streams: 10 looping VUs for 15s (gracefulStop: 30s)
+
+
+running (01.0s), 10/10 VUs, 372 complete and 0 interrupted iterations
+streams   [   7% ] 10 VUs  01.0s/15s
+
+running (02.0s), 10/10 VUs, 718 complete and 0 interrupted iterations
+streams   [  13% ] 10 VUs  02.0s/15s
+
+running (03.0s), 10/10 VUs, 1081 complete and 0 interrupted iterations
+streams   [  20% ] 10 VUs  03.0s/15s
+
+running (04.0s), 10/10 VUs, 1395 complete and 0 interrupted iterations
+streams   [  27% ] 10 VUs  04.0s/15s
+
+running (05.0s), 10/10 VUs, 1802 complete and 0 interrupted iterations
+streams   [  33% ] 10 VUs  05.0s/15s
+
+running (06.0s), 10/10 VUs, 2218 complete and 0 interrupted iterations
+streams   [  40% ] 10 VUs  06.0s/15s
+
+running (07.0s), 10/10 VUs, 2576 complete and 0 interrupted iterations
+streams   [  47% ] 10 VUs  07.0s/15s
+
+running (08.0s), 10/10 VUs, 2949 complete and 0 interrupted iterations
+streams   [  53% ] 10 VUs  08.0s/15s
+
+running (09.0s), 10/10 VUs, 3409 complete and 0 interrupted iterations
+streams   [  60% ] 10 VUs  09.0s/15s
+
+running (10.0s), 10/10 VUs, 3780 complete and 0 interrupted iterations
+streams   [  67% ] 10 VUs  10.0s/15s
+
+running (11.0s), 10/10 VUs, 4177 complete and 0 interrupted iterations
+streams   [  73% ] 10 VUs  11.0s/15s
+
+running (12.0s), 10/10 VUs, 4625 complete and 0 interrupted iterations
+streams   [  80% ] 10 VUs  12.0s/15s
+
+running (13.0s), 10/10 VUs, 5121 complete and 0 interrupted iterations
+streams   [  87% ] 10 VUs  13.0s/15s
+
+running (14.0s), 10/10 VUs, 5469 complete and 0 interrupted iterations
+streams   [  93% ] 10 VUs  14.0s/15s
+
+running (15.0s), 10/10 VUs, 5842 complete and 0 interrupted iterations
+streams   [ 100% ] 10 VUs  15.0s/15s
+
+     ✓ status is 200
+     ✓ sse done
+
+     checks.........................: 100.00% 11706 out of 11706
+     data_received..................: 24 MB   1.6 MB/s
+     data_sent......................: 1.9 MB  129 kB/s
+     http_req_blocked...............: avg=2.8µs   min=1.17µs  med=2.29µs  max=362.85µs p(90)=2.79µs  p(95)=3.01µs  p(99)=4.91µs  
+     http_req_connecting............: avg=297ns   min=0s      med=0s      max=337.32µs p(90)=0s      p(95)=0s      p(99)=0s      
+     http_req_duration..............: avg=25.53ms min=2.29ms  med=11.25ms max=299.94ms p(90)=65.65ms p(95)=92.54ms p(99)=150.67ms
+       { expected_response:true }...: avg=25.53ms min=2.29ms  med=11.25ms max=299.94ms p(90)=65.65ms p(95)=92.54ms p(99)=150.67ms
+     http_req_failed................: 0.00%   0 out of 5854
+     http_req_receiving.............: avg=13.02ms min=65.68µs med=4.84ms  max=288ms    p(90)=35.7ms  p(95)=58.86ms p(99)=110.57ms
+     http_req_sending...............: avg=12.15µs min=5.27µs  med=11.15µs max=373.73µs p(90)=13.35µs p(95)=14.8µs  p(99)=31.66µs 
+     http_req_tls_handshaking.......: avg=0s      min=0s      med=0s      max=0s       p(90)=0s      p(95)=0s      p(99)=0s      
+     http_req_waiting...............: avg=12.49ms min=1.04ms  med=4.94ms  max=277.73ms p(90)=32.22ms p(95)=56.55ms p(99)=113.44ms
+     http_reqs......................: 5854    389.684172/s
+     iteration_duration.............: avg=25.63ms min=2.8ms   med=11.35ms max=300.04ms p(90)=65.77ms p(95)=92.66ms p(99)=150.77ms
+     iterations.....................: 5853    389.617605/s
+     vus............................: 10      min=10             max=10
+     vus_max........................: 10      min=10             max=10
+
+
+running (15.0s), 00/10 VUs, 5853 complete and 0 interrupted iterations
+streams ✓ [ 100% ] 10 VUs  15s

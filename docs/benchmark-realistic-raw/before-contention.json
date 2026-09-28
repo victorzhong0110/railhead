@@ -1,0 +1,46 @@
+{
+  "billing_drift_sum": 0,
+  "billing_keys_nonzero_drift": 0,
+  "billing_negative_balance_keys": 0,
+  "channels_ok": {
+    "mock-backup": 35,
+    "mock-primary": 4671
+  },
+  "goodput_qps": 436.67329659400275,
+  "goodput_tokens_per_s": 779073.5978982062,
+  "keys": 1,
+  "latency_ms": {
+    "avg": 526.9823168295794,
+    "max": 5024.052,
+    "min": 36.608,
+    "n": 4706,
+    "p50": 229.929,
+    "p95": 2330.203,
+    "p99": 3851.327
+  },
+  "offered_qps": 436.67329659400275,
+  "other_non_200": 0,
+  "overhead_ms": {
+    "avg": 156.47985298701303,
+    "max": 1698.228,
+    "min": 6.5449999999999875,
+    "n": 1925,
+    "p50": 109.884,
+    "p95": 450.57599999999996,
+    "p99": 744.817
+  },
+  "rate_limited": 0,
+  "requests": 4706,
+  "speed": 20,
+  "status_counts": {
+    "200": 4706
+  },
+  "success": 4706,
+  "trace_copies": 1,
+  "trace_rows_per_copy": 4706,
+  "ttft_overhead_ms": {
+    "n": 0
+  },
+  "upstream_or_gateway_errors": 0,
+  "wall_s": 10.77693561
+}

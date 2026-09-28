@@ -1,0 +1,7 @@
+{"event": "mark_ready", "unix_ms": 1790579290430}
+{"event":"clock","unix_ms":1790579290433}
+{"event":"stop_gateway_2","unix_ms":1790579294435}
+{"event":"start_gateway_2","unix_ms":1790579302760}
+{"event":"restart_redis","unix_ms":1790579311463}
+{"event":"degrade_mock_a","unix_ms":1790579319879}
+{"event":"restore_mock_a","unix_ms":1790579327888}

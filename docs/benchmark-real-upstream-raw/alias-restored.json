@@ -1,0 +1,14 @@
+{
+  "status": 200,
+  "latency_ms": 1871.468,
+  "channel": "minimax-alias-primary",
+  "model": "MiniMax-M3.1-Flash-Preview",
+  "total_tokens": 227,
+  "prompt_tokens": 211,
+  "completion_tokens": 16,
+  "reasoning_tokens": 0,
+  "has_think": false,
+  "has_reasoning_content": true,
+  "content_len": 0,
+  "reasoning_len": 72
+}

@@ -1,0 +1,21 @@
+/bin/
+/dist/
+.env
+*.out
+coverage.out
+/gateway
+/mockprovider
+/benchcheck
+.secrets/
+minimax.key
+uploads/
+dump.rdb
+__pycache__/
+*.pyc
+
+# Full Azure LLM inference traces are about 0.7–1.1 GB.
+# Download with scripts/download-azure-trace.sh. The committed file is only the excerpt.
+/AzureLLMInferenceTrace_conv_1week.csv
+/AzureLLMInferenceTrace_code_1week.csv
+/testdata/AzureLLMInferenceTrace_conv_1week.csv
+/testdata/AzureLLMInferenceTrace_code_1week.csv

@@ -1,0 +1,3695 @@
+{
+  "model": "MiniMax-M3",
+  "max_tokens": 128,
+  "prompt": "用一句话说明什么是限流。",
+  "temperature": 0,
+  "levels": [
+    [
+      1,
+      10
+    ],
+    [
+      4,
+      16
+    ],
+    [
+      8,
+      16
+    ],
+    [
+      16,
+      16
+    ]
+  ],
+  "by": {
+    "direct_c1_unary": {
+      "n": 5,
+      "success": 5,
+      "status_counts": {
+        "200": 5
+      },
+      "rate_limits_seen": 0,
+      "latency_ms": {
+        "n": 5,
+        "avg": 2891.796800799966,
+        "p50": 2959.930064999753,
+        "p95": 3010.8971170002405,
+        "p99": 3010.8971170002405,
+        "min": 2091.0979620002763,
+        "max": 3542.926833999445
+      },
+      "ttft_ms": {
+        "n": 0
+      },
+      "usage_total_tokens": 1181,
+      "think_responses": 5
+    },
+    "direct_c1_stream": {
+      "n": 5,
+      "success": 5,
+      "status_counts": {
+        "200": 5
+      },
+      "rate_limits_seen": 0,
+      "latency_ms": {
+        "n": 5,
+        "avg": 3121.720482800083,
+        "p50": 3211.293573000148,
+        "p95": 3289.1108639996673,
+        "p99": 3289.1108639996673,
+        "min": 2604.7050380002474,
+        "max": 3541.970568000579
+      },
+      "ttft_ms": {
+        "n": 5,
+        "avg": 1605.0115016001655,
+        "p50": 1580.6870830001571,
+        "p95": 1720.2536240001791,
+        "p99": 1720.2536240001791,
+        "min": 1446.9775019997542,
+        "max": 1724.0265540003747
+      },
+      "usage_total_tokens": 1229,
+      "think_responses": 5
+    },
+    "direct_c4_unary": {
+      "n": 8,
+      "success": 8,
+      "status_counts": {
+        "200": 8
+      },
+      "rate_limits_seen": 0,
+      "latency_ms": {
+        "n": 8,
+        "avg": 3863.023005999821,
+        "p50": 3692.7365229994393,
+        "p95": 4875.555958999939,
+        "p99": 4875.555958999939,
+        "min": 2530.291111999759,
+        "max": 6119.464306999362
+      },
+      "ttft_ms": {
+        "n": 0
+      },
+      "usage_total_tokens": 2064,
+      "think_responses": 8
+    },
+    "direct_c4_stream": {
+      "n": 8,
+      "success": 8,
+      "status_counts": {
+        "200": 8
+      },
+      "rate_limits_seen": 0,
+      "latency_ms": {
+        "n": 8,
+        "avg": 3724.7605018749255,
+        "p50": 3638.626691000354,
+        "p95": 4514.714543000082,
+        "p99": 4514.714543000082,
+        "min": 2577.9925629994977,
+        "max": 4883.966079999482
+      },
+      "ttft_ms": {
+        "n": 8,
+        "avg": 1947.5536484995928,
+        "p50": 1824.2160519994286,
+        "p95": 2007.455447999746,
+        "p99": 2007.455447999746,
+        "min": 1539.2894019996675,
+        "max": 3086.5905139999086
+      },
+      "usage_total_tokens": 2126,
+      "think_responses": 8
+    },
+    "direct_c8_unary": {
+      "n": 8,
+      "success": 8,
+      "status_counts": {
+        "200": 8
+      },
+      "rate_limits_seen": 0,
+      "latency_ms": {
+        "n": 8,
+        "avg": 3478.5824808750476,
+        "p50": 3548.227744000542,
+        "p95": 3564.033132000077,
+        "p99": 3564.033132000077,
+        "min": 2924.550296000234,
+        "max": 3944.9708780002766
+      },
+      "ttft_ms": {
+        "n": 0
+      },
+      "usage_total_tokens": 2039,
+      "think_responses": 8
+    },
+    "direct_c8_stream": {
+      "n": 8,
+      "success": 8,
+      "status_counts": {
+        "200": 8
+      },
+      "rate_limits_seen": 0,
+      "latency_ms": {
+        "n": 8,
+        "avg": 3555.13254875018,
+        "p50": 3587.657193999803,
+        "p95": 4081.9314870004746,
+        "p99": 4081.9314870004746,
+        "min": 2692.1398439999393,
+        "max": 4235.917367000184
+      },
+      "ttft_ms": {
+        "n": 8,
+        "avg": 1778.099597125106,
+        "p50": 1737.8525740004989,
+        "p95": 1910.9981749998042,
+        "p99": 1910.9981749998042,
+        "min": 1626.2121670006309,
+        "max": 1965.222851999897
+      },
+      "usage_total_tokens": 2139,
+      "think_responses": 8
+    },
+    "direct_c16_unary": {
+      "n": 8,
+      "success": 0,
+      "status_counts": {
+        "429": 8
+      },
+      "rate_limits_seen": 40,
+      "latency_ms": {
+        "n": 0
+      },
+      "ttft_ms": {
+        "n": 0
+      },
+      "usage_total_tokens": 0,
+      "think_responses": 0
+    },
+    "direct_c16_stream": {
+      "n": 8,
+      "success": 0,
+      "status_counts": {
+        "429": 8
+      },
+      "rate_limits_seen": 40,
+      "latency_ms": {
+        "n": 0
+      },
+      "ttft_ms": {
+        "n": 0
+      },
+      "usage_total_tokens": 0,
+      "think_responses": 0
+    },
+    "gateway_c1_unary": {
+      "n": 5,
+      "success": 5,
+      "status_counts": {
+        "200": 5
+      },
+      "rate_limits_seen": 0,
+      "latency_ms": {
+        "n": 5,
+        "avg": 2836.328472400055,
+        "p50": 2864.008164000552,
+        "p95": 3455.3078669996466,
+        "p99": 3455.3078669996466,
+        "min": 2069.3940319997637,
+        "max": 3557.978376000392
+      },
+      "ttft_ms": {
+        "n": 0
+      },
+      "usage_total_tokens": 1346,
+      "think_responses": 5
+    },
+    "gateway_c1_stream": {
+      "n": 5,
+      "success": 5,
+      "status_counts": {
+        "200": 5
+      },
+      "rate_limits_seen": 0,
+      "latency_ms": {
+        "n": 5,
+        "avg": 2299.9965271999827,
+        "p50": 2161.376943000505,
+        "p95": 2713.661752999542,
+        "p99": 2713.661752999542,
+        "min": 1588.3680560000357,
+        "max": 3174.2630600001576
+      },
+      "ttft_ms": {
+        "n": 5,
+        "avg": 794.6400405999157,
+        "p50": 722.9611450002267,
+        "p95": 806.3928330002454,
+        "p99": 806.3928330002454,
+        "min": 651.7934869998498,
+        "max": 1072.4240669997016
+      },
+      "usage_total_tokens": 1309,
+      "think_responses": 5
+    },
+    "gateway_c4_unary": {
+      "n": 8,
+      "success": 8,
+      "status_counts": {
+        "200": 8
+      },
+      "rate_limits_seen": 0,
+      "latency_ms": {
+        "n": 8,
+        "avg": 2576.53626025035,
+        "p50": 2355.9532810004384,
+        "p95": 3412.6425750000635,
+        "p99": 3412.6425750000635,
+        "min": 1568.7130890000844,
+        "max": 3483.4864829999788
+      },
+      "ttft_ms": {
+        "n": 0
+      },
+      "usage_total_tokens": 1990,
+      "think_responses": 8
+    },
+    "gateway_c4_stream": {
+      "n": 8,
+      "success": 8,
+      "status_counts": {
+        "200": 8
+      },
+      "rate_limits_seen": 0,
+      "latency_ms": {
+        "n": 8,
+        "avg": 2825.459460624984,
+        "p50": 2507.6877530000274,
+        "p95": 3631.652295999629,
+        "p99": 3631.652295999629,
+        "min": 1840.696184999615,
+        "max": 3872.7581160001137
+      },
+      "ttft_ms": {
+        "n": 8,
+        "avg": 1130.5145788749087,
+        "p50": 928.7991769997461,
+        "p95": 1645.3827779996573,
+        "p99": 1645.3827779996573,
+        "min": 688.0104879992359,
+        "max": 2109.1686720001235
+      },
+      "usage_total_tokens": 2035,
+      "think_responses": 8
+    },
+    "gateway_c8_unary": {
+      "n": 8,
+      "success": 1,
+      "status_counts": {
+        "502": 3,
+        "200": 1,
+        "404": 4
+      },
+      "rate_limits_seen": 0,
+      "latency_ms": {
+        "n": 1,
+        "avg": 1803.7284409992935,
+        "p50": 1803.7284409992935,
+        "p95": 1803.7284409992935,
+        "p99": 1803.7284409992935,
+        "min": 1803.7284409992935,
+        "max": 1803.7284409992935
+      },
+      "ttft_ms": {
+        "n": 0
+      },
+      "usage_total_tokens": 237,
+      "think_responses": 1
+    },
+    "gateway_c8_stream": {
+      "n": 8,
+      "success": 0,
+      "status_counts": {
+        "502": 4,
+        "404": 4
+      },
+      "rate_limits_seen": 0,
+      "latency_ms": {
+        "n": 0
+      },
+      "ttft_ms": {
+        "n": 0
+      },
+      "usage_total_tokens": 0,
+      "think_responses": 0
+    },
+    "gateway_c16_unary": {
+      "n": 8,
+      "success": 0,
+      "status_counts": {
+        "502": 8
+      },
+      "rate_limits_seen": 0,
+      "latency_ms": {
+        "n": 0
+      },
+      "ttft_ms": {
+        "n": 0
+      },
+      "usage_total_tokens": 0,
+      "think_responses": 0
+    },
+    "gateway_c16_stream": {
+      "n": 8,
+      "success": 0,
+      "status_counts": {
+        "502": 8
+      },
+      "rate_limits_seen": 0,
+      "latency_ms": {
+        "n": 0
+      },
+      "ttft_ms": {
+        "n": 0
+      },
+      "usage_total_tokens": 0,
+      "think_responses": 0
+    }
+  },
+  "overhead_gateway_minus_direct": {
+    "c1_unary": {
+      "latency_p50_ms": -95.92190099920117,
+      "latency_p95_ms": 444.4107499994061,
+      "latency_p99_ms": 444.4107499994061
+    },
+    "c1_stream": {
+      "latency_p50_ms": -1049.9166299996432,
+      "latency_p95_ms": -575.4491110001254,
+      "latency_p99_ms": -575.4491110001254,
+      "ttft_p50_ms": -857.7259379999305,
+      "ttft_p95_ms": -913.8607909999337,
+      "ttft_p99_ms": -913.8607909999337
+    },
+    "c4_unary": {
+      "latency_p50_ms": -1336.783241999001,
+      "latency_p95_ms": -1462.9133839998758,
+      "latency_p99_ms": -1462.9133839998758
+    },
+    "c4_stream": {
+      "latency_p50_ms": -1130.9389380003267,
+      "latency_p95_ms": -883.0622470004528,
+      "latency_p99_ms": -883.0622470004528,
+      "ttft_p50_ms": -895.4168749996825,
+      "ttft_p95_ms": -362.0726700000887,
+      "ttft_p99_ms": -362.0726700000887
+    },
+    "c8_unary": {
+      "latency_p50_ms": -1744.4993030012483,
+      "latency_p95_ms": -1760.3046910007834,
+      "latency_p99_ms": -1760.3046910007834
+    }
+  },
+  "direct_usage_total_tokens": 10778,
+  "gateway_usage_total_tokens": 6917,
+  "failover_usage_total_tokens": 0,
+  "failover": {
+    "reloaded": {
+      "channels": 5
+    },
+    "requests": [
+      {
+        "idx": 0,
+        "status": 504,
+        "latency_ms": 388.8752029997704,
+        "channel": null,
+        "model": null,
+        "usage": {},
+        "has_think": false,
+        "error_message": "请求超时"
+      },
+      {
+        "idx": 1,
+        "status": 504,
+        "latency_ms": 410.0355979999222,
+        "channel": null,
+        "model": null,
+        "usage": {},
+        "has_think": false,
+        "error_message": "请求超时"
+      },
+      {
+        "idx": 2,
+        "status": 502,
+        "latency_ms": 699.5200040000782,
+        "channel": null,
+        "model": null,
+        "usage": {},
+        "has_think": false,
+        "error_message": "上游渠道不可用"
+      },
+      {
+        "idx": 3,
+        "status": 502,
+        "latency_ms": 357.33882400018047,
+        "channel": null,
+        "model": null,
+        "usage": {},
+        "has_think": false,
+        "error_message": "上游渠道不可用"
+      }
+    ]
+  },
+  "unknown_model_via_gateway": {
+    "status": 400,
+    "latency_ms": 348.1692049999765,
+    "channel": null,
+    "error": {
+      "message": "{\"type\":\"error\",\"error\":{\"type\":\"bad_request_error\",\"message\":\"invalid params, unknown model 'minimax-m3.1' (2013)\",\"http_code\":\"400\"},\"request_id\":\"07094a7857464585457c514374a4066c\"}",
+      "type": "invalid_request_error",
+      "code": "upstream_rejected"
+    }
+  },
+  "reconcile": {
+    "api_key_id": 1,
+    "quota_granted": 5000000,
+    "quota_balance": 4992871,
+    "settled": 7129,
+    "inflight": 0,
+    "unbilled": 0,
+    "reserved_count": 0,
+    "settled_count": 28,
+    "refunded_count": 36,
+    "drift": 0
+  },
+  "gateway_usage_vs_settled": {
+    "reported_usage_total": 6917,
+    "settled": 7129,
+    "unbilled": 0,
+    "drift": 0,
+    "inflight": 0
+  },
+  "requests": [
+    {
+      "path": "direct",
+      "concurrency": 1,
+      "stream": false,
+      "idx": 0,
+      "status": 200,
+      "latency_ms": 3542.926833999445,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 221,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 38,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 82,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 1,
+      "stream": true,
+      "idx": 1,
+      "status": 200,
+      "latency_ms": 2604.7050380002474,
+      "ttft_ms": 1446.9775019997542,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 236,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 53,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 152,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 1,
+      "stream": false,
+      "idx": 2,
+      "status": 200,
+      "latency_ms": 3010.8971170002405,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 239,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 56,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 111,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 1,
+      "stream": true,
+      "idx": 3,
+      "status": 200,
+      "latency_ms": 3541.970568000579,
+      "ttft_ms": 1553.1127450003623,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 269,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 86,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 176,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 1,
+      "stream": false,
+      "idx": 4,
+      "status": 200,
+      "latency_ms": 2854.1320260001157,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 242,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 59,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 197,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 1,
+      "stream": true,
+      "idx": 5,
+      "status": 200,
+      "latency_ms": 3211.293573000148,
+      "ttft_ms": 1724.0265540003747,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 249,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 66,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 146,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 1,
+      "stream": false,
+      "idx": 6,
+      "status": 200,
+      "latency_ms": 2091.0979620002763,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 232,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 49,
+        "completion_tokens_details": {
+          "reasoning_tokens": 18
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 97,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 18,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 1,
+      "stream": true,
+      "idx": 7,
+      "status": 200,
+      "latency_ms": 2961.5223709997736,
+      "ttft_ms": 1580.6870830001571,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 238,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 55,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 114,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 1,
+      "stream": false,
+      "idx": 8,
+      "status": 200,
+      "latency_ms": 2959.930064999753,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 247,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 64,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 195,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 1,
+      "stream": true,
+      "idx": 9,
+      "status": 200,
+      "latency_ms": 3289.1108639996673,
+      "ttft_ms": 1720.2536240001791,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 237,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 54,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 111,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 1,
+      "stream": false,
+      "idx": 0,
+      "status": 200,
+      "latency_ms": 2234.953922999921,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 249,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 66,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 177,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 1,
+      "stream": true,
+      "idx": 1,
+      "status": 200,
+      "latency_ms": 3174.2630600001576,
+      "ttft_ms": 651.7934869998498,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 311,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 497,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 1,
+      "stream": false,
+      "idx": 2,
+      "status": 200,
+      "latency_ms": 3455.3078669996466,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 311,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 255,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 1,
+      "stream": true,
+      "idx": 3,
+      "status": 200,
+      "latency_ms": 1588.3680560000357,
+      "ttft_ms": 722.9611450002267,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 225,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 42,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 137,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 1,
+      "stream": false,
+      "idx": 4,
+      "status": 200,
+      "latency_ms": 2864.008164000552,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 237,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 54,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 106,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 1,
+      "stream": true,
+      "idx": 5,
+      "status": 200,
+      "latency_ms": 1862.3128239996731,
+      "ttft_ms": 719.6286709995547,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 235,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 52,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 105,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 1,
+      "stream": false,
+      "idx": 6,
+      "status": 200,
+      "latency_ms": 2069.3940319997637,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 238,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 55,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 112,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 1,
+      "stream": true,
+      "idx": 7,
+      "status": 200,
+      "latency_ms": 2713.661752999542,
+      "ttft_ms": 1072.4240669997016,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 279,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 96,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 198,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 1,
+      "stream": false,
+      "idx": 8,
+      "status": 200,
+      "latency_ms": 3557.978376000392,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 311,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 271,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 1,
+      "stream": true,
+      "idx": 9,
+      "status": 200,
+      "latency_ms": 2161.376943000505,
+      "ttft_ms": 806.3928330002454,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 259,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 76,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 238,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 0,
+      "status": 200,
+      "latency_ms": 3692.7365229994393,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 242,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 59,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 114,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 1,
+      "status": 200,
+      "latency_ms": 3638.626691000354,
+      "ttft_ms": 2007.455447999746,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 258,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 75,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 250,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 2,
+      "status": 200,
+      "latency_ms": 3323.2912499997838,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 221,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 38,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 79,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 3,
+      "status": 200,
+      "latency_ms": 3660.187144999327,
+      "ttft_ms": 2000.9020419993249,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 244,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 61,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 118,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 4,
+      "status": 200,
+      "latency_ms": 3738.5093160000906,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 255,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 72,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 239,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 5,
+      "status": 200,
+      "latency_ms": 3010.092082000483,
+      "ttft_ms": 1550.6551159996889,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 229,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 46,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 95,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 6,
+      "status": 200,
+      "latency_ms": 2530.291111999759,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 225,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 42,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 83,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 7,
+      "status": 200,
+      "latency_ms": 4514.714543000082,
+      "ttft_ms": 1539.2894019996675,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 311,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 265,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 8,
+      "status": 200,
+      "latency_ms": 6119.464306999362,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 287,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 104,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 217,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 9,
+      "status": 200,
+      "latency_ms": 4883.966079999482,
+      "ttft_ms": 3086.5905139999086,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 251,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 68,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 131,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 10,
+      "status": 200,
+      "latency_ms": 4875.555958999939,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 271,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 88,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 186,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 11,
+      "status": 200,
+      "latency_ms": 4110.788472999957,
+      "ttft_ms": 1870.4942149997805,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 292,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 109,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 427,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 12,
+      "status": 200,
+      "latency_ms": 3708.490695999899,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 311,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 127
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 534,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 127,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 13,
+      "status": 200,
+      "latency_ms": 2577.9925629994977,
+      "ttft_ms": 1700.8263989991974,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 237,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 54,
+        "completion_tokens_details": {
+          "reasoning_tokens": 23
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 154,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 23,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 14,
+      "status": 200,
+      "latency_ms": 2915.844885000297,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 252,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 69,
+        "completion_tokens_details": {
+          "reasoning_tokens": 37
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 238,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 37,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 15,
+      "status": 200,
+      "latency_ms": 3401.7164380002214,
+      "ttft_ms": 1824.2160519994286,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 304,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 121,
+        "completion_tokens_details": {
+          "reasoning_tokens": 83
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 532,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 83,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 0,
+      "status": 200,
+      "latency_ms": 2878.183640000316,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 239,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 56,
+        "completion_tokens_details": {
+          "reasoning_tokens": 17
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 114,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 17,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 1,
+      "status": 200,
+      "latency_ms": 3033.2180659997903,
+      "ttft_ms": 1645.3827779996573,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 230,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 47,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 94,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 2,
+      "status": 200,
+      "latency_ms": 3412.6425750000635,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 235,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 52,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 103,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 3,
+      "status": 200,
+      "latency_ms": 3253.0165429998306,
+      "ttft_ms": 2109.1686720001235,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 235,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 52,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 105,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 4,
+      "status": 200,
+      "latency_ms": 1568.7130890000844,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 229,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 46,
+        "completion_tokens_details": {
+          "reasoning_tokens": 18
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 151,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 18,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 5,
+      "status": 200,
+      "latency_ms": 2130.2044270005354,
+      "ttft_ms": 769.97002600001,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 245,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 62,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 126,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 6,
+      "status": 200,
+      "latency_ms": 3483.4864829999788,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 309,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 126,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 254,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 7,
+      "status": 200,
+      "latency_ms": 3631.652295999629,
+      "ttft_ms": 1122.9731679995894,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 293,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 110,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 227,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 8,
+      "status": 200,
+      "latency_ms": 2355.9532810004384,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 234,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 51,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 100,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 9,
+      "status": 200,
+      "latency_ms": 3872.7581160001137,
+      "ttft_ms": 999.0038280002409,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 290,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 107,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 226,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 10,
+      "status": 200,
+      "latency_ms": 2265.4393110005913,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 241,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 58,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 169,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 11,
+      "status": 200,
+      "latency_ms": 2334.4422990003295,
+      "ttft_ms": 928.7991769997461,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 245,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 62,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 171,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 12,
+      "status": 200,
+      "latency_ms": 2263.5834150005394,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 262,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 79,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 266,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 13,
+      "status": 200,
+      "latency_ms": 2507.6877530000274,
+      "ttft_ms": 780.8084940006665,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 260,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 77,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 249,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": false,
+      "idx": 14,
+      "status": 200,
+      "latency_ms": 2384.288288000789,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 241,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 58,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 124,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 4,
+      "stream": true,
+      "idx": 15,
+      "status": 200,
+      "latency_ms": 1840.696184999615,
+      "ttft_ms": 688.0104879992359,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 237,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 54,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 155,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 0,
+      "status": 200,
+      "latency_ms": 3560.650323000118,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 244,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 61,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 125,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 1,
+      "status": 200,
+      "latency_ms": 3671.491404000335,
+      "ttft_ms": 1737.8525740004989,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 256,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 73,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 148,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 2,
+      "status": 200,
+      "latency_ms": 3944.9708780002766,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 296,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 113,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 444,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 3,
+      "status": 200,
+      "latency_ms": 3887.4561330003417,
+      "ttft_ms": 1836.2794650001888,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 280,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 97,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 204,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 4,
+      "status": 200,
+      "latency_ms": 3548.227744000542,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 269,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 86,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 175,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 5,
+      "status": 200,
+      "latency_ms": 4235.917367000184,
+      "ttft_ms": 1739.213128999836,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 311,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 128,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 459,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 6,
+      "status": 200,
+      "latency_ms": 3561.099575999833,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 255,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 72,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 142,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 7,
+      "status": 200,
+      "latency_ms": 3083.6462560000655,
+      "ttft_ms": 1724.9694539996199,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 250,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 67,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 238,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 8,
+      "status": 200,
+      "latency_ms": 3215.1321819992518,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 276,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 93,
+        "completion_tokens_details": {
+          "reasoning_tokens": 57
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 357,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 57,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 9,
+      "status": 200,
+      "latency_ms": 3587.657193999803,
+      "ttft_ms": 1910.9981749998042,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 259,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 76,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 264,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 10,
+      "status": 200,
+      "latency_ms": 3564.033132000077,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 230,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 47,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 100,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 11,
+      "status": 200,
+      "latency_ms": 2692.1398439999393,
+      "ttft_ms": 1684.0489610003715,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 252,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 69,
+        "completion_tokens_details": {
+          "reasoning_tokens": 35
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 150,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 35,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 12,
+      "status": 200,
+      "latency_ms": 2924.550296000234,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 221,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 38,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 85,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 13,
+      "status": 200,
+      "latency_ms": 4081.9314870004746,
+      "ttft_ms": 1965.222851999897,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 277,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 94,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 198,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 14,
+      "status": 200,
+      "latency_ms": 3509.9957160000486,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 248,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 65,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 132,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 15,
+      "status": 200,
+      "latency_ms": 3200.8207050002966,
+      "ttft_ms": 1626.2121670006309,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {
+        "total_tokens": 254,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 71,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 248,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 0,
+      "status": 502,
+      "latency_ms": 1133.027143999243,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": "upstream_unavailable",
+      "error_message": "上游渠道不可用"
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 1,
+      "status": 502,
+      "latency_ms": 1373.0609829999594,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 2,
+      "status": 502,
+      "latency_ms": 1177.078607999647,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": "upstream_unavailable",
+      "error_message": "上游渠道不可用"
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 3,
+      "status": 502,
+      "latency_ms": 1337.7438110001094,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 4,
+      "status": 200,
+      "latency_ms": 1803.7284409992935,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": "minimax-m3",
+      "error": null,
+      "usage": {
+        "total_tokens": 237,
+        "total_characters": 0,
+        "prompt_tokens": 183,
+        "completion_tokens": 54,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        }
+      },
+      "has_think": true,
+      "has_think_close": true,
+      "content_len": 111,
+      "model": "MiniMax-M3",
+      "reasoning_tokens": 0,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 5,
+      "status": 502,
+      "latency_ms": 967.4872390005476,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 6,
+      "status": 502,
+      "latency_ms": 966.1390419996678,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": "upstream_unavailable",
+      "error_message": "上游渠道不可用"
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 7,
+      "status": 502,
+      "latency_ms": 1267.6063620001514,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 8,
+      "status": 404,
+      "latency_ms": 9.178566000628052,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": "model_not_found",
+      "error_message": "没有可用渠道能服务这个模型"
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 9,
+      "status": 404,
+      "latency_ms": 7.082587999320822,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 10,
+      "status": 404,
+      "latency_ms": 7.151570000132779,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": "model_not_found",
+      "error_message": "没有可用渠道能服务这个模型"
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 11,
+      "status": 404,
+      "latency_ms": 6.644526999480149,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 12,
+      "status": 404,
+      "latency_ms": 7.8719430002820445,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": "model_not_found",
+      "error_message": "没有可用渠道能服务这个模型"
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 13,
+      "status": 404,
+      "latency_ms": 6.423475999326911,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": false,
+      "idx": 14,
+      "status": 404,
+      "latency_ms": 10.124075000021548,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": "model_not_found",
+      "error_message": "没有可用渠道能服务这个模型"
+    },
+    {
+      "path": "gateway",
+      "concurrency": 8,
+      "stream": true,
+      "idx": 15,
+      "status": 404,
+      "latency_ms": 7.751631000246562,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 0,
+      "status": 429,
+      "latency_ms": 1142.3824650000824,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": "已达到 Token Plan 速率限制：请升级 Token Plan 套餐或切换为按量付费 API 使用。 (2062)"
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 1,
+      "status": 429,
+      "latency_ms": 1106.032889000744,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 2,
+      "status": 429,
+      "latency_ms": 1074.5309949998045,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": "已达到 Token Plan 速率限制：请升级 Token Plan 套餐或切换为按量付费 API 使用。 (2062)"
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 3,
+      "status": 429,
+      "latency_ms": 1299.784532000558,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 4,
+      "status": 429,
+      "latency_ms": 1093.9549960003205,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": "已达到 Token Plan 速率限制：请升级 Token Plan 套餐或切换为按量付费 API 使用。 (2062)"
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 5,
+      "status": 429,
+      "latency_ms": 1100.3510729997288,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 6,
+      "status": 429,
+      "latency_ms": 1090.759390999665,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": "已达到 Token Plan 速率限制：请升级 Token Plan 套餐或切换为按量付费 API 使用。 (2062)"
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 7,
+      "status": 429,
+      "latency_ms": 1337.9578789999869,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 8,
+      "status": 429,
+      "latency_ms": 1071.664002000034,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": "已达到 Token Plan 速率限制：请升级 Token Plan 套餐或切换为按量付费 API 使用。 (2062)"
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 9,
+      "status": 429,
+      "latency_ms": 1081.3693469999635,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 10,
+      "status": 429,
+      "latency_ms": 1139.6707109997806,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": "已达到 Token Plan 速率限制：请升级 Token Plan 套餐或切换为按量付费 API 使用。 (2062)"
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 11,
+      "status": 429,
+      "latency_ms": 1074.8003369999424,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 12,
+      "status": 429,
+      "latency_ms": 1129.715113000202,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": "已达到 Token Plan 速率限制：请升级 Token Plan 套餐或切换为按量付费 API 使用。 (2062)"
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 13,
+      "status": 429,
+      "latency_ms": 1324.0731380001307,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 14,
+      "status": 429,
+      "latency_ms": 1094.5520100003705,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": "已达到 Token Plan 速率限制：请升级 Token Plan 套餐或切换为按量付费 API 使用。 (2062)"
+    },
+    {
+      "path": "direct",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 15,
+      "status": 429,
+      "latency_ms": 1130.988962999254,
+      "ttft_ms": null,
+      "attempts": 5,
+      "rate_limits_seen": 5,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 0,
+      "status": 502,
+      "latency_ms": 366.24676500014175,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": "upstream_unavailable",
+      "error_message": "上游渠道不可用"
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 1,
+      "status": 502,
+      "latency_ms": 376.96900999981153,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 2,
+      "status": 502,
+      "latency_ms": 372.6545529998475,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": "upstream_unavailable",
+      "error_message": "上游渠道不可用"
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 3,
+      "status": 502,
+      "latency_ms": 379.3596220002655,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 4,
+      "status": 502,
+      "latency_ms": 374.8432980000871,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": "upstream_unavailable",
+      "error_message": "上游渠道不可用"
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 5,
+      "status": 502,
+      "latency_ms": 386.3297269999748,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 6,
+      "status": 502,
+      "latency_ms": 378.14456799969776,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": "upstream_unavailable",
+      "error_message": "上游渠道不可用"
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 7,
+      "status": 502,
+      "latency_ms": 717.3581820006802,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 8,
+      "status": 502,
+      "latency_ms": 730.7920309995097,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": "upstream_unavailable",
+      "error_message": "上游渠道不可用"
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 9,
+      "status": 502,
+      "latency_ms": 376.44075700063695,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 10,
+      "status": 502,
+      "latency_ms": 727.3764620003931,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": "upstream_unavailable",
+      "error_message": "上游渠道不可用"
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 11,
+      "status": 502,
+      "latency_ms": 736.9004689999201,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 12,
+      "status": 502,
+      "latency_ms": 749.9325179996958,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": "upstream_unavailable",
+      "error_message": "上游渠道不可用"
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 13,
+      "status": 502,
+      "latency_ms": 718.9060740001878,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": false,
+      "idx": 14,
+      "status": 502,
+      "latency_ms": 720.1188369999727,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": {},
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": "upstream_unavailable",
+      "error_message": "上游渠道不可用"
+    },
+    {
+      "path": "gateway",
+      "concurrency": 16,
+      "stream": true,
+      "idx": 15,
+      "status": 502,
+      "latency_ms": 721.5549909997208,
+      "ttft_ms": null,
+      "attempts": 1,
+      "rate_limits_seen": 0,
+      "channel": null,
+      "error": null,
+      "usage": null,
+      "has_think": false,
+      "has_think_close": false,
+      "content_len": 0,
+      "model": null,
+      "reasoning_tokens": null,
+      "error_code": null,
+      "error_message": null
+    }
+  ],
+  "c1_note": {
+    "direct_n": 10,
+    "gateway_n": 10,
+    "paired": []
+  }
+}

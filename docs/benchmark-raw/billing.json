@@ -1,0 +1,24 @@
+{
+  "balance_non_negative": true,
+  "concurrency": 50,
+  "drift_zero": true,
+  "elapsed_ms": 93,
+  "inflight_zero": true,
+  "mode": "billing",
+  "quota_granted": 500,
+  "reconcile": {
+    "quota_balance": 17,
+    "quota_granted": 500,
+    "settled": 483,
+    "inflight": 0,
+    "unbilled": 0,
+    "drift": 0,
+    "settled_count": 21,
+    "refunded_count": 0
+  },
+  "requests": 200,
+  "status_counts": {
+    "200": 21,
+    "429": 179
+  }
+}

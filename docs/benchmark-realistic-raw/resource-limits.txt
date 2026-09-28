@@ -1,0 +1,17 @@
+bridge_nf_call_iptables=0
+postgres 
+NanoCpus=700000000 Memory=536870912
+redis 
+NanoCpus=200000000 Memory=134217728
+mock-a 
+NanoCpus=350000000 Memory=134217728
+mock-b 
+NanoCpus=350000000 Memory=134217728
+gateway-1 
+NanoCpus=350000000 Memory=268435456
+gateway-2 
+NanoCpus=350000000 Memory=268435456
+gateway-3 
+NanoCpus=350000000 Memory=268435456
+nginx 
+NanoCpus=200000000 Memory=67108864

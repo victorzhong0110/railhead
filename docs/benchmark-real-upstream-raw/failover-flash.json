@@ -1,0 +1,47 @@
+[
+  {
+    "status": 200,
+    "latency_ms": 1583.59,
+    "channel": "minimax-alias-failover",
+    "resp_model": "MiniMax-M3",
+    "total_tokens": 215,
+    "prompt_tokens": 183,
+    "completion_tokens": 32,
+    "reasoning_tokens": 31,
+    "has_think": true,
+    "has_reasoning_content": false,
+    "content_len": 154,
+    "reasoning_len": 0,
+    "error_message": null
+  },
+  {
+    "status": 200,
+    "latency_ms": 1291.428,
+    "channel": "minimax-alias-failover",
+    "resp_model": "MiniMax-M3",
+    "total_tokens": 215,
+    "prompt_tokens": 183,
+    "completion_tokens": 32,
+    "reasoning_tokens": 0,
+    "has_think": true,
+    "has_reasoning_content": false,
+    "content_len": 84,
+    "reasoning_len": 0,
+    "error_message": null
+  },
+  {
+    "status": 200,
+    "latency_ms": 1226.019,
+    "channel": "minimax-alias-failover",
+    "resp_model": "MiniMax-M3",
+    "total_tokens": 215,
+    "prompt_tokens": 183,
+    "completion_tokens": 32,
+    "reasoning_tokens": 0,
+    "has_think": true,
+    "has_reasoning_content": false,
+    "content_len": 118,
+    "reasoning_len": 0,
+    "error_message": null
+  }
+]
